@@ -15,7 +15,7 @@ app.post("/send", async (req, res) => {
     sendgridMail.setApiKey(process.env.SENDGRID_API_KEY);
 
   const msg = {
-    to: to, // recipient email
+    to: to, 
     from: "alen.fek.sola@gmail.com", 
     subject: subject,
     text: text,
